@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>五子棋</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="button-frame">
+            <label>
+                <input type="radio" name="difficulty" value="简单"> 简单
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="中等" checked> 中等
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="困难"> 困难
+            </label>
+        </div>
+        
+        <canvas id="gameCanvas"></canvas>
+        
+        <div class="bottom-frame">
+            <button id="undoButton">悔棋</button>
+            <button id="restartButton">重新开始</button>
+        </div>
+    </div>
+    <script src="gomoku.js"></script>
+</body>
+</html> 
